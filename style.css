@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+.navbar-brand{
+    font-size: 50%;
+    color: sienna;
+    font-family: fantasy;
+}
+#built{
+    color: rgba(0, 0, 0, 0.801);
+    font-weight: lighter;
+    font-size: 50%;
+    line-height: 0.5em;
+    font-style: italic;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px; 
+    z-index: 1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: coral;
+}
+.navbar{
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    
+}
+#navbarNav{
+  justify-content: end;
+  
+}
+.navbar-nav{
+    margin-top: 0;
+    gap: 1.5em;
+
+}
+.navbar-nav :hover{
+    transition: 500ms linear;
+    transform: scale(1.2);
+    
+}
+
+.bio{
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px
+    2px var(--primary-shadow);
+}
+/*about styling */
+
+#item8{
+    font-style: oblique;
+    font-size: 2em;
+    color: salmon;
+}
+#call{
+    font-style: oblique;
+    font-size: 1.5em;
+    border: solid;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.527);
+    text-align: center;
+}
+.img-p{
+    border: solid 40px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.grid-container{
+    margin-top: 15%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-item2{
+    text-align: center;
+    font-family: sans-serif;
+}
+.connect{
+    width: 100%;
+
+}
+.form-item1{
+    height: 500px;
+    border-radius: 15px; 
+} 
+#head-form{
+    border: solid;
+    border-radius: 5px;
+    padding-left: 1.5em;
+    width: 200px;
+    margin-left: 50px;
+    background-color: salmon;
+    font-size: 1.3em;
+}
+
+#btn{
+    margin-top: 10px;
+     /* align-content: center;  */
+}
+
+.form-item1 textarea:focus, input:focus {
+     color: black;
+      
+}
+
+.media-links {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color: seashell;
+  } 
+
+
+ /*card-imges*/
+ .wrapper{
+       display: flex;
+       width: 100%;
+       justify-content: space-around;
+       gap: 1em;
+       margin: 10px auto;
+   }
+   .wrapper img{
+    height: 350px;
+   }
+   .card{
+       width: 400px;
+       height: 400px;
+       object-fit: cover;
+       padding: 2rem 1rem;
+       background: #fff;
+       position: relative;
+       display: flex;
+       align-items: flex-end;
+       box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+       transition: 5s ease-in-out;
+   }
+   .card:hover{
+       transform: translateY(20px);
+   } 
+   .card-text{
+       text-align: center;
+       font-size: 1em;
+       font-style: italic;
+       color: sienna;
+   }
+   .cards{
+       display: flex;
+       width: 100%;
+       margin: 10px auto;
+       gap: 1em;
+       object-fit: cover;  
+   }
+   .cards img{
+    height: 350px;
+
+   }
+   .card-text1{
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+    color: sienna;
+   }
+
+/*ends here*/
+hr{
+    border: 10px solid green;
+    border-radius: 5px;
+  }
+/* footer starts here */
+#info{
+    height: 250px;
+    margin: 20px;
+    background-color: gray;
+}
+.modern{
+    text-align: center;
+    margin-top: 10px;
+}
+.follow{
+    text-align: center;
+    font-size: 1em;
+}
+.footer-item{
+    justify-content: center;
+    gap: 1em;    
+}
+
+/*social media icon styling */
+.icon2 a{ 
+    display: flex;
+    margin-left: 50%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.672);
+}
+
+/*copy right styling */
+.copyright{
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+@media screen and (max-width:800px){
+    .wrapper{
+        display: block;
+        background-color: coral;
+    }
+    .cards{
+        display: block;
+        background-color: coral;
+        margin-bottom: 10px;
+    }
+    .grid-container{
+        display: block;
+    }
+    hr{
+        border: 10px dotted coral;
+        border-radius: 2px;
+      }
+    .img-p{
+        width: 300px;
+        border: double 10px;
+    }
+    #call{
+        font-style: oblique;
+        font-size: 1em;
+        width: 200px;
+        border: thin 1rem;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.527);
+        text-align: center;
+    }
+    .cards img{
+        height: 400px;
+    }
+    #head-form{
+        
+        border: solid 3px;
+        border-radius: 10px;
+        padding-left: 1.5em;
+        width: 200px;
+        margin-left: 80px;
+        background-color: salmon;
+        font-size: 1em;
+    }
+
+}
